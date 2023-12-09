@@ -14,7 +14,10 @@
 //   ]);
 //   => ['Gale Dekarios', 'Wyll Ravengard', 'Karlach Cliffgate'];
 function getNames(people) {
-  
+  let newArr =[]
+  for (let i=0; i <people.length; i++){
+    newArr.push(people[i].firstName + ' ' + people[i].lastName)
+  } return newArr
 }
 
 // Given an object representing a person, return their full name (first name and last name).

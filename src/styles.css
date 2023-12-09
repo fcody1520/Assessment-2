@@ -1,9 +1,10 @@
 body {
     background-color: black;
     color: white;
+    font-family: system-ui, sans-serif;
+}
 
-
-td {
+td, th {
     padding: 5px;
 }
 
@@ -11,9 +12,8 @@ table {
     margin-top: 50px;
 }
 
-}
 
-table, th, td {
-    border: 1px solid;
-    border-color: white;
+
+th, td {
+    border: 1px solid #ffffff;
 }
