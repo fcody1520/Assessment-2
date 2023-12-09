@@ -13,7 +13,9 @@
 //     { firstName: 'Karlach', lastName: 'Cliffgate', location: 'Avernus' }
 //   ]);
 //   => ['Gale Dekarios', 'Wyll Ravengard', 'Karlach Cliffgate'];
-function getNames(people) {}
+function getNames(people) {
+  
+}
 
 // Given an object representing a person, return their full name (first name and last name).
 // You MUST use object destructuring in your solution.
@@ -93,7 +95,7 @@ function wordCount(str) {}
 //     rarity: 'common',
 //     months: [9, 10, 11, 12, 1, 2, 3, 4, 5, 6],
 // }
-//
+//}
 // Ex.:
 //   isBugAvailable({
 //     name: 'common butterfly',
@@ -103,7 +105,9 @@ function wordCount(str) {}
 //     }
 //   }, 1);
 //   => true
-function isBugAvailable(bug, month) {}
+function isBugAvailable(bug, month) {
+  return bug.availability.months.includes(month)
+}
 
 // Given an array of objects representing bugs, return an object that'll be
 // used to build a calendar. The keys of the object should be the months of the
