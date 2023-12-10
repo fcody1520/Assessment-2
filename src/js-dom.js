@@ -70,7 +70,22 @@ document.getElementById('item-adder').addEventListener('dblclick',() => {
 // Clicking on "Turn Stuff Red" should make text red and clicking on "Turn
 // Stuff Blue" should make text blue.
 
-/// TODO: replace this with your code
+document.getElementById('blue').addEventListener('click', () => {
+    const clrs = document.getElementsByClassName('changes-colors')
+    for (let clr of clrs){
+      clr.style.color = 'blue'
+    }
+  })
+
+  document.getElementById('red').addEventListener('click', () => {
+    const clrs = document.querySelectorAll('.changes-colors')
+    for (let clr of clrs){
+      clr.style.color = 'red'
+    }
+  })
+
+
+
 
 // Calculate factorial
 //
