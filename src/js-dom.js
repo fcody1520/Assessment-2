@@ -8,7 +8,19 @@
 // update and say "Log out". If a user clicks on the button again, its text
 // should switch from "Log Out" to "Log In".
 
-/// TODO: replace this with your code
+const auth = document.getElementById( 'auth' );
+
+auth.addEventListener('click', function (){
+  if (auth.textContent === 'Log in'){
+    auth.textContent ='Log out'
+  } else { 
+    auth.textContent = 'Log in'
+  }
+})
+
+
+
+
 
 // Send an alert
 //
