@@ -15,7 +15,7 @@ const giveMeTwo = (x) => {
 // Ex.:
 //   addNums(1, 2);
 //   => 3
-const addNums = (x, y) => x +y;
+const addNums = (x, y) => x + y;
 
 // Set the value of max to an arrow function that takes in two numbers and
 // returns the largest one.
@@ -60,9 +60,7 @@ function loudLongWords(words) {
     let longWords = words.filter((word) => {
         return word.length > 4;
     });
-  return longWords.map((wor) =>{
-    return wor.toUpperCase()
-  })
+  return longWords.map((wor) => wor.toUpperCase())
 }
 
 export { addNums, createGreetings, evens, giveMeTwo, loudLongWords, max };
