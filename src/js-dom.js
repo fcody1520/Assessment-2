@@ -29,7 +29,13 @@ auth.addEventListener('click', function (){
 // A user should be able to enter what they want the alert to say in the
 // text box. Then, they can submit the form to trigger the alert.
 
-/// TODO: replace this with your code
+document.getElementById('send-alert').addEventListener('submit', (evt) => {
+    evt.preventDefault()
+    alert(document.getElementById('alert-message').value)
+  })
+
+
+
 
 // Add an item
 //
@@ -46,7 +52,14 @@ auth.addEventListener('click', function (){
 //     <li>Item</li>  <!-- This was added after double-clicking -->
 //   </ol>
 
-/// TODO: replace this with your code
+document.getElementById('item-adder').addEventListener('dblclick',() => {
+    const li = document.createElement('li')
+    li.innerText = 'Item'
+    document.getElementById('list').appendChild(li)
+  } )
+
+
+
 
 // Change colors
 //
